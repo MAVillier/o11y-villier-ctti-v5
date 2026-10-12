@@ -1,0 +1,62 @@
+/* Pau review: explicit destinations, quiet labels and compact reading filters. */
+.reading-home .pau-home-collection{font-size:18px;color:var(--muted);margin:0 0 30px}
+.reading-home .pau-home-question{font-size:24px;line-height:1.3;margin:0 0 18px}
+.reading-home .lens-entries{margin-top:0}
+.reading-home .lens-entry{background:#fff;border-top-width:2px;gap:16px}
+.reading-home .lens-entry.evolve{background:#fff}
+.reading-home .lens-entry.explore{background:#fff}
+.reading-home .lens-entry h2{font-size:25px}
+.reading-home .pau-home-explanation{max-width:850px;font-size:17px;line-height:1.6;margin-bottom:12px}
+.reading-home .pau-home-complete{margin:0}
+.reading-home .pau-home-complete a{font-size:18px;text-decoration:underline;text-underline-offset:4px}
+body #lens-bar{padding:0;position:static;background:white}
+.pau-reading-controls{max-width:1440px;margin:auto;padding:15px 4.4vw}
+.pau-reading-options{border:0;background:white}
+.pau-reading-options>summary{cursor:pointer;min-height:44px;padding:8px 0;line-height:1.5;font-size:16px}
+.pau-reading-options>summary::marker{color:var(--muted)}
+.pau-reading-caption{font-size:16px;text-decoration:underline;text-underline-offset:4px;margin-right:18px}
+.pau-reading-state{font-size:16px;font-weight:400;color:var(--muted)}
+.pau-reading-fields{display:flex;gap:28px;align-items:flex-end;flex-wrap:wrap;padding:12px 0 4px}
+.pau-reading-field{display:flex;flex-direction:column;gap:8px;font-size:16px;min-width:230px;max-width:100%;flex:0 1 330px;color:var(--ink)}
+.pau-reading-field>span{font-size:16px;font-weight:400}
+.pau-reading-field select{font:inherit;font-size:17px;line-height:1.5;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:0;min-height:46px;padding:9px 35px 9px 12px;width:100%;max-width:100%;appearance:auto}
+.pau-reading-field select:focus-visible,.pau-reading-options>summary:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+body .lens-badges{gap:12px}
+body .lens-badge{padding:0;background:transparent!important;border:0;font-size:16px;font-weight:400;color:var(--muted);border-radius:0}
+body .lens-badge.evolve,body .lens-badge.explore{background:transparent!important}
+body .lens-badge>span{font-size:16px}
+body .lens-panel{background:#fff;border-left-width:2px;padding:4px 0 4px 24px}
+body .lens-panel.explore{background:#fff}
+body .lens-panel .lens-label{font-size:16px;font-weight:400}
+body .lens-panel .lens-label>span:last-child{font-size:16px}
+body .lens-panel .lens-tech{font-weight:400;color:var(--muted);font-size:16px!important}
+body .lens-proof{padding-top:4px;margin-top:16px}
+body .lens-panels{gap:32px}
+#catalog-reading-slot #lens-bar{border:0;margin:0 0 18px}
+#catalog-reading-slot .pau-reading-controls{padding:0;max-width:none}
+#catalog-reading-slot .pau-reading-fields{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;align-items:end}
+#catalog-reading-slot .catalog-extra-filters{display:contents}
+#catalog-reading-slot .pau-reading-field,#catalog-reading-slot .catalog-field{min-width:0;max-width:none;width:auto;gap:8px;font-size:16px}
+#catalog-reading-slot .catalog-field .select-field{width:100%;max-width:none;font-size:17px}
+#catalog-reading-slot .catalog-field .select-value{padding:9px 35px 9px 12px;min-height:46px;line-height:1.5}
+#catalog-reading-slot .catalog-field select{font-size:17px}
+@media(min-width:761px) and (max-width:1100px){#catalog-reading-slot .pau-reading-fields{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:761px){
+.pau-reading-filter>summary{display:none}
+.pau-reading-filter>.pau-reading-fields{padding:0}
+}
+@media(max-width:760px){
+.pau-reading-controls{padding:10px 6vw}
+.pau-reading-options>summary{display:list-item;padding:7px 0}
+.pau-reading-caption{display:inline;margin-right:0}
+.pau-reading-state{display:block;margin-left:0;margin-top:4px}
+.pau-reading-fields{display:flex;flex-direction:column;align-items:stretch;gap:16px;padding:16px 0 8px}
+.pau-reading-field{width:100%;min-width:0;flex:none}
+#catalog-reading-slot #lens-bar{margin-bottom:6px;border-bottom:1px solid var(--line)}
+#catalog-reading-slot .pau-reading-fields{display:flex;flex-direction:column;gap:16px;align-items:stretch}
+#catalog-reading-slot .pau-reading-field,#catalog-reading-slot .catalog-field{width:100%}
+.reading-home .pau-home-collection{font-size:17px;line-height:1.5}
+.reading-home .pau-home-question{font-size:22px}
+body .lens-panel{padding-left:18px}
+}
+@media print{.pau-reading-controls{display:none}}

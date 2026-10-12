@@ -17,3 +17,105 @@ body{font-size:18px}button,input,select,textarea{font-family:inherit}p,li,a,butt
 .brand .villier-logo{width:88px}
 @media(max-width:760px){.brand .villier-logo{width:66px}}
 @media(max-width:380px){.brand .villier-logo{width:48px}}
+
+/* Orientation and a smaller set of controls — Pau, October 2026. */
+.mobile-home{display:none!important}
+.site-breadcrumbs{position:sticky;top:var(--topbar-height,92px);z-index:35;background:#fff;border-bottom:1px solid var(--line);padding:0 max(6vw,calc((100vw - 1440px)/2 + 6vw))}
+.site-breadcrumbs ol{display:flex;align-items:center;gap:12px;list-style:none;padding:0;margin:0;min-height:52px}
+.site-breadcrumbs li{display:flex;align-items:center;gap:12px;min-width:0;font-size:16px;line-height:1.4}
+.site-breadcrumbs li:last-child{flex:1}
+.site-breadcrumbs a{display:inline-flex;align-items:center;min-height:44px;white-space:nowrap;color:var(--blue);font-size:16px;text-decoration:underline;text-underline-offset:4px}
+.site-breadcrumbs [aria-current]{color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:16px}
+.crumb-separator{color:#7a858f;font-size:16px}
+body:not([data-route=home]) #main>.wrap{padding-top:30px}
+[id^=actor-],[id^=process-],#comparison,.detail-tabs{scroll-margin-top:calc(var(--topbar-height,92px) + 80px)}
+.eyebrow{font-weight:500;letter-spacing:1px}
+.group-small,.sidebar-section h3,.evidence-meta{letter-spacing:0;text-transform:none;font-weight:400}
+.idea-card:hover{transform:none;box-shadow:none}
+.idea-card .tech-strip{color:var(--muted)}
+.tech-strip span{border-bottom:0}
+.bookmark{display:inline-flex;align-items:center;justify-content:center;flex:0 0 44px;width:44px;height:44px;border:1px solid var(--line);color:var(--ink);background:white;border-radius:0;cursor:pointer}
+.heart-icon{display:block;width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linejoin:round;flex:none}
+.bookmark.on,.favorite-action.on{background:white;border-color:var(--blue);color:var(--blue)}
+.bookmark.on .heart-icon,.favorite-action.on .heart-icon{fill:currentColor}
+.bookmark:hover,.favorite-action:hover{background:var(--paper)}
+.btn{font-weight:400;min-height:44px}
+.btn.small{min-height:44px}
+.btn:disabled{cursor:default;opacity:.55}
+.text-action{font:inherit;font-size:16px;color:var(--blue);border:0;background:white;padding:10px 0;cursor:pointer;text-align:left;text-decoration:underline;text-underline-offset:4px}
+.favorite-action{gap:10px}
+.catalog-help{font-size:16px;color:var(--muted);margin:0 0 24px}
+.catalog-help a{color:var(--blue);text-underline-offset:4px}
+.catalog-tools{display:grid;grid-template-columns:minmax(220px,1fr) minmax(200px,310px) minmax(190px,220px);gap:18px;align-items:end;margin:22px 0 26px}
+.catalog-tools .search{max-width:none;min-width:0}
+.catalog-tools .search input{min-height:48px;background:white;font-size:17px}
+.catalog-field{display:flex;flex-direction:column;gap:7px;font-size:16px;min-width:0}
+.catalog-tools .select-field{width:100%;max-width:none;min-width:0}
+.catalog-tools select{width:100%;max-width:none;min-height:48px;font:inherit;font-size:17px;border-radius:0}
+.results-count{font-size:16px;line-height:1.6}
+.idea-context{margin:20px 0 0;border-bottom:1px solid var(--line);padding-bottom:12px}
+.idea-context summary{cursor:pointer;font-size:16px;padding:8px 0;min-height:44px;color:var(--muted)}
+.idea-context .card-context-bar{margin:10px 0;border:0;padding:0}
+.idea-context a{color:var(--blue);text-underline-offset:4px}
+.detail-head{padding-bottom:24px}
+.detail-head .head-actions{gap:12px}
+.detail-tabs{margin-top:14px;gap:28px}
+.detail-tabs button{min-height:48px}
+.context-mobile{display:none}
+.context-item,.scope-domain{box-shadow:none}
+.selection-summary{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin:0 0 24px}
+.selection-summary p{font-size:16px;color:var(--muted);margin:0}
+.session-files{margin:0 0 30px;border-bottom:1px solid var(--line);padding-bottom:20px}
+.session-files summary{cursor:pointer;min-height:44px;padding:10px 0;font-size:17px}
+.session-files p{font-size:16px;max-width:760px;color:var(--muted);line-height:1.6}
+.session-files .actions{margin-top:14px}
+.detail-tabs button:focus-visible,.bookmark:focus-visible,.text-action:focus-visible,.site-breadcrumbs a:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.selected-row .code{font-size:16px;letter-spacing:0;color:var(--muted)}
+@media(max-width:1100px){.catalog-tools{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.catalog-tools .search{grid-column:1/-1}}
+@media(max-width:760px){
+ .topbar{min-height:76px;padding:12px 6vw;gap:12px;flex-wrap:wrap}
+ .topbar .brand{min-width:0;margin-right:auto}
+ .menu-toggle{width:44px;height:44px;flex:0 0 44px;justify-content:center;padding:8px;gap:0;margin:0}
+ .topbar.menu-open nav{padding:10px 0 0;gap:0}
+ .topbar nav a{padding:12px 0;min-height:44px;font-size:17px}
+ .mobile-home{display:flex!important}
+ .site-breadcrumbs{padding:0 6vw}
+ .site-breadcrumbs ol,.site-breadcrumbs li{gap:9px}
+ .site-breadcrumbs ol{min-height:50px}
+ .site-breadcrumbs li:not(:last-child){flex:none}
+ body:not([data-route=home]) #main>.wrap{padding-top:24px}
+ .section-head{margin-bottom:20px;padding-bottom:20px}
+ .section-head h1{font-size:32px;letter-spacing:-1px}
+ .catalog-help{margin:0 0 18px}
+ .catalog-tools{gap:12px;margin:18px 0 20px;grid-template-columns:minmax(0,1fr)}
+ .catalog-tools .search{grid-column:auto}
+ .catalog-field{gap:5px}
+ .idea-card{padding:22px;min-height:0}
+ .card-top{margin-bottom:18px}
+ .card-top .group-small{font-size:16px;line-height:1.4}
+ .card-top .code{margin-left:auto}
+ .detail-head .head-actions{flex-direction:row;gap:10px}
+ .detail-head .head-actions .btn{font-size:16px}
+ .detail-tabs{display:grid;grid-template-columns:1fr 1fr;gap:0 18px;overflow:visible;margin-top:14px}
+ .detail-tabs button{text-align:left;white-space:normal;padding:12px 0;font-size:16px}
+ .context-nav{display:none}
+ .context-mobile{display:flex;flex-direction:column;gap:8px;font-size:16px;margin-bottom:25px}
+ .context-mobile select{font:inherit;font-size:17px;color:var(--ink);background:white;border:1px solid var(--line);border-radius:0;min-height:48px;padding:10px;width:100%}
+ .session-files .actions{align-items:stretch}
+ .selection-summary{align-items:flex-start}
+ .selected-row .title{min-width:0;flex-basis:70%}
+ .selected-row .score-badge{font-size:18px}
+ .rel-entry a{font-size:16px;min-height:44px}
+}
+@media(max-width:360px){.brand .brand-title{font-size:18px}.brand .brand-title small{font-size:16px}.brand .villier-logo{width:44px}.topbar{padding-left:5vw;padding-right:5vw}.brand{gap:8px}.brand .brand-title{padding-left:8px}.detail-head .head-actions{flex-direction:column}}
+@media print{.site-breadcrumbs,.idea-context,.session-files{display:none!important}}
+.catalog-tools:has(>.search:only-child){grid-template-columns:1fr;max-width:720px}
+@media(max-width:760px){
+ .selected-row{grid-template-columns:44px minmax(0,1fr) auto;gap:16px 12px}
+ .selected-row>input{grid-column:1;grid-row:1;align-self:start;margin-top:8px!important}
+ .selected-row .title{grid-column:2/-1;grid-row:1}
+ .selected-row>.code{grid-column:1;grid-row:2;font-size:16px;text-align:center}
+ .selected-row .score-badge{grid-column:2;grid-row:2;min-width:0;text-align:left;justify-self:start}
+ .selected-row>button{grid-column:3;grid-row:2;justify-self:end}
+ .catalog-tools:has(>.search:only-child){max-width:none}
+}

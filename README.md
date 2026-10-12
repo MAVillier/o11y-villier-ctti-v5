@@ -1,16 +1,18 @@
 # Atles d’observabilitat · V5 · Idees per avançar
 
-Edició Villier de l’11 d’octubre de 2026, preparada a partir de la versió de dos recorreguts i de la revisió de lectura amb en Pau.
+Edició Villier V5, amb revisió de navegació del 12 d’octubre de 2026 a partir dels comentaris d’en Pau.
 
 ## Obrir la web
 
 Descomprimeix tota la carpeta i obre index.html amb Edge o Chrome. Conserva tots els fitxers junts. Funciona en local, sense instal·lació ni servidor. Els enllaços a fonts externes requereixen connexió a Internet quan els obres.
 
-La versió anterior i els llocs publicats continuen intactes. Aquesta còpia està preparada per a GitHub Pages, en un repositori independent.
+Aquesta edició correspon al lloc https://mavillier.github.io/o11y-villier-ctti-v5/. Les altres edicions es conserven per separat.
 
 ## Una primera lectura més acotada
 
-La portada explica el propòsit i combina dues decisions: idees principals (14) o catàleg complet (34); i recorregut d’evolució operativa, innovació aplicada o visió conjunta.
+La portada explica el propòsit i ofereix tres accessos directes: evolució operativa, innovació aplicada i visió conjunta. Cadascun comença amb les idees principals que hi encaixen. L’enllaç «Explora les 34 idees» obre directament el catàleg complet en visió conjunta.
+
+Al catàleg, «Ajusta la lectura» agrupa els filtres al mòbil. El resultat indica quantes idees es mostren i de quin conjunt. El fil d’Ariadna manté visibles l’inici, la secció i la idea actual; el retorn a Idees recupera els filtres de la consulta. Un cor desa o retira cada idea de la selecció.
 
 Les 14 principals tenen contingut d’evolució operativa; 11 també tenen contingut d’innovació. Al catàleg complet hi ha 30 idees d’evolució i 25 d’innovació. Una idea pot participar en tots dos recorreguts.
 
@@ -36,9 +38,9 @@ Atles_O11y_Villier_CTTI_v5.pdf és el document complet actualitzat: 34 idees, le
 
 ## La teva selecció
 
-Les idees seleccionades, les notes, els sis eixos de valoració i les vessants comentades es desen en aquest navegador. Aquesta edició té un espai de desat propi i conserva intactes les dades de la versió anterior.
+Les idees seleccionades, les notes, els sis eixos de valoració i les vessants comentades es desen en aquest navegador. Aquesta revisió conserva l’espai de desat de Villier V5 i recupera les sessions guardades en aquesta edició.
 
-«Desa la sessió» exporta les dades. «Recupera una sessió» admet els fitxers de sessions anteriors; substitueix la sessió actual, de manera que convé desar-la abans si la vols conservar.
+L’apartat «Desa o recupera una sessió» reuneix les dues accions. «Desa la sessió» exporta les dades. «Recupera una sessió» admet els fitxers de sessions anteriors; substitueix la sessió actual, de manera que convé desar-la abans si la vols conservar.
 
 El filtre d’idees principals acota la navegació. La selecció conserva també les idees guardades del catàleg complet. L’exportació de la proposta segueix el recorregut, amb el recompte indicat a la pantalla.
 

@@ -25,13 +25,7 @@ window.AtlesRelations=(()=>{
     if(s.focus)p.set('focus',s.focus);if(s.home&&s.entry!=='card')p.set('home',s.home);if(s.projection)p.set('project','1');
     return L.carry('#relations?'+p);
   }
-  function switcher(active,actor=''){
-    const selected=active==='relations'&&current.entry==='actor'?current.actor:actor;
-    const catalog=roles[selected]?'#atlas?actor='+selected:'#atlas';
-    const remembered=new URLSearchParams(lastRoute.split('?')[1]||'');
-    const map=active==='relations'?url():roles[actor]&&remembered.get('actor')!==actor?'#relations?entry=actor&actor='+actor:lastRoute;
-    return `<nav class="atlas-views" aria-label="Vista de l’Atles"><a href="${catalog}" ${active==='cards'?'aria-current="page"':''}>Idees</a><a href="${map}" ${active==='relations'?'aria-current="page"':''}>Relacions</a></nav>`;
-  }
+  function switcher(){return '';}
   function modeLink(entry,label){const defaults={initiative:{initiative:'canvi',focus:'',home:''},actor:{actor:'cdc',focus:'',home:''},card:{focus:current.focus||'',home:''}};return `<a href="${current.entry===entry?url():url({entry,...defaults[entry]})}" ${current.entry===entry?'aria-current="page"':''}>${label}</a>`;}
   function restoreFocus(){if(!pendingFocus)return false;const saved=pendingFocus;pendingFocus=null;const target=document.querySelector(saved.selector);if(!target)return false;if(target.tagName!=='SELECT')target.tabIndex=-1;target.focus({preventScroll:true});window.scrollTo(0,saved.y);return true;}
 
